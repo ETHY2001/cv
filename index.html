@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">-
+ <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+<title> Mordern Restaurant Feedback</title>
+<link rel="stylesheet" href="amoomo.css">
+</head>
+<body>
+<!-- Header Section with Image and Title-->
+<div class="header">
+<img src="https://via.placeholder.com/700x300.png?text=Restaurant+Image" alt="Restaurant Image">
+<h1> THE MORDERN RESTAURANT</h1>
+</div>
+<div class="form-container">
+<h2>Feedback Form</h2>
+<p> Thank you for taking the time to help us improve!</p> 
+
+<label for="name">Name</label>
+<input type="text"id="name"name="name" placeholder="Enter your name">
+<label for="email">Email</label>
+<input type="text"id="email"name="email" placeholder="Enter your email">
+<label for="age">Age</label>
+<input type="text"id="age"name="age" placeholder="Age"> 
+<label for="group-size">How many of you are dining?</label>
+<select id="group-size" name="group-size">
+<option>select group size</option>
+<option>Individual(one person)</option>
+<option>Couple</option>
+<option>Small Group(3-5 people)</option>
+<option>Large Group( more than 5 people)</option>
+<option>Prefer Not to say </option>
+</select>
+
+
+<label>Would you recomment our restaurand to a friend?</label>
+<div class="radio-group">
+<input type="radio"id="definitely"name="recomment" value="Definitely">
+<label for ="definitely">Definitely</label>
+<input type="radio"id="maybe"name="recomment" value="Maybe">
+<label for ="maybe">Maybe</label>
+<input type="radio"id="not-sure"name="recomment" value="Not-sure">
+<label for ="not-sure">Not-sure</label>
+</div>
+<label for="favorite-feature">What is your favorite feature of the restaurant?</label>
+<select id="favorite-feature" name="favorite-feature">
+<option>Select an option</option>
+<option>Food</option>
+<option>Ambience</option>
+<option>Service</option>
+<option>Price</option>
+<option>Other</option>
+</select>
+
+<label>What would you like to see improved?(Check all that apply)</label>
+<input type="checkbox"id="food"name="improve" value="Food">
+<label for ="food">Food</label><br>
+<input type="checkbox"id="ambience"name="improve" value="Ambience">
+<label for ="ambience">Ambience</label><br>
+<input type="checkbox"id="service-time"name="improve" value="Service Time">
+<label for ="service-time">Service Time</label><br>
+<input type="checkbox"id="Service-quality"name="improve" value="Service Staff Quality">
+<label for ="service-quality">Service Staff Quality</label><br>
+<input type="checkbox"id="menu"name="improve" value="Menu">
+<label for ="menu">Menu</label><br>
+<input type="checkbox"id="prices"name="improve" value="Prices & Offers">
+<label for ="prices">Prices & Offers</label><br>
+<label for ="comments">Any comments or suggestions?</label>
+<textarea id="comments" name ="comments" row="4" placeholder ="Enter your comment here..."></textarea>
+<button class ="submit-btn"
+onclick="submitForm()">Submit</button>
+<!--Button linked to JS-->
+</div>
+<script src="script.js">
+</script>
+</body> 
+</html>
